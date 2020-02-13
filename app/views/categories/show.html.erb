@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @category.title %>
+  <% if @category.answer == nil %>
+    <%= simple_form_for [@category, @answer] do |f| %>
+      <%= f.association :nominee, as: :radio_buttons %>
+      <%= f.submit 'Vote !', class: 'btn btn-primary' %>
+    <% end %>
+  <% else %>
+    <p>Tu as voté pour</p>
+    <p><%= Nominee.find(@category.answer.nominee_id).name %></p>
+    <p><%= link_to "Change ton vote",
+                category_path(@category),
+                method: :delete %></p>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>
