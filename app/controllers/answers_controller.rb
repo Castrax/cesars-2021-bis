@@ -14,4 +14,13 @@ class AnswersController < ApplicationController
   def edit
     @answer = Answer.find(params[:id])
   end
+
+  def destroy
+    @answer = Answer.find(params[:id])
+    if @answer.destroy
+      redirect_to category_path(params[:category_id])
+    else
+      render 'categories/show'
+    end
+  end
 end

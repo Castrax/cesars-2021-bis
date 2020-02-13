@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @categories = Category.all
     @nominees = Nominee.where(category_id: params[:id])
     if @answer == nil
       @answer = Answer.new
