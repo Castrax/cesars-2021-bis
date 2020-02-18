@@ -4,38 +4,42 @@
     <div class="cards">
       <% @nominees.each do |nominee| %>
         <div class="card">
-          <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
-          <div class="infos-nominee">
-            <div class="left-infos">
-              <div class="name">
-                <%= nominee.name %>
+          <%= link_to category_answers_path(:nominee_id => nominee.id, :category_id => @category.id), method: :post do %>
+            <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
+            <div class="infos-nominee">
+              <div class="left-infos">
+                <div class="name">
+                  <%= nominee.name %>
+                </div>
+                <div class="real">
+                  <%= nominee.real %>
+                </div>
               </div>
-              <div class="real">
-                <%= nominee.real %>
-              </div>
+              <div class="select-button"></div>
             </div>
-            <div class="select-button"></div>
-          </div>
+          <% end %>
         </div>
       <% end %>
     </div>
-    <div class="vote-button">
-      <%= link_to 'Vote', new_category_answer_path(@answer), class: 'vote-button-link' %>
+    <div class="vote-button-show">
+      <%= link_to 'Vote', new_category_answer_path(@category), class: 'vote-button-link' %>
     </div>
   <% else %>
     <div class="card-voted">
-      <img src="" alt="">
+      <%= cl_image_tag Nominee.find(id=@category.answer.nominee_id).photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
       <div class="infos-voted">
         <div class="infos-title">
-          <p>Tu as voté pour</p>
-          <p><%= Nominee.find(@category.answer.nominee_id).name %></p>
+          <p class="label-infos-title">Tu as voté pour</p>
+          <p class="nominee-infos"><%= Nominee.find(@category.answer.nominee_id).name %> <span class="infos-title-real">- <%= Nominee.find(@category.answer.nominee_id).real %></span></p>
         </div>
         <div class="infos-buttons">
-          <%= link_to "Change ton vote",
-                      category_answer_path(@category, @category.answer),
-                      method: :delete,
-                      data: { confirm: "Are you sure?" }, class: 'change-vote' %>
-          <%= link_to "Vote pour la catégorie suivante", category_path(@category.id + 1)  %>
+          <div class="change-vote-div">
+            <%= link_to "Change ton vote",
+                        category_answer_path(@category, @category.answer),
+                        method: :delete,
+                        data: { confirm: "Are you sure?" }, class: 'change-vote' %>
+          </div>
+          <%= link_to "Vote pour la catégorie suivante", category_path(@category.id + 1), class: "next-category"  %>
         </div>
       </div>
     </div>

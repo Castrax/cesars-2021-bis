@@ -1,7 +1,7 @@
 class AnswersController < ApplicationController
   def create
     @category = Category.find(params[:category_id])
-    @nominee = Nominee.find(params[:answer][:nominee_id])
+    @nominee = Nominee.find(params[:nominee_id])
     @user = current_user
     @answer = Answer.new(category_id: @category.id, nominee_id: @nominee.id, user_id: @user.id)
     if @answer.save!
