@@ -1,0 +1,51 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  grid-gap: 5rem;
+}
+
+.card {
+  height: 492px;
+  border-radius: 4px;
+}
+
+.card > img {
+  vertical-align: middle;
+  border-style: none;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-radius: 4px;
+}
+
+.infos-nominee {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  bottom: 2rem;
+  left: 1rem;
+  width: 90%;
+  .left-infos {
+    text-transform: uppercase;
+    margin-right: 1rem;
+    .name {
+      // margin-bottom: 1rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    .real {
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  }
+  .select-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FEDE1E;
+    border-radius: 50%;
+  }
+}

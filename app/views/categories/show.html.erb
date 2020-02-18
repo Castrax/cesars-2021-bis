@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="category-title"><%= @category.title %></h1>
+  <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
   <% if @category.answer == nil %>
     <div class="cards">
       <% @nominees.each do |nominee| %>
@@ -18,6 +18,9 @@
           </div>
         </div>
       <% end %>
+    </div>
+    <div class="vote-button">
+      <%= link_to 'Vote', new_category_answer_path(@answer), class: 'vote-button-link' %>
     </div>
   <% else %>
     <div class="card-voted">
@@ -43,7 +46,7 @@
 
 
 
-<div class="container">
+<!-- <div class="container">
   <h1 class="category-title"><%= @category.title %></h1>
   <% if @category.answer == nil %>
     <div class="cards">
@@ -72,4 +75,4 @@
       </div>
     </div>
   <% end %>
-</div>
+</div> -->
