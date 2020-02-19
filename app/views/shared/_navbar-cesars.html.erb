@@ -1,9 +1,16 @@
-<div class="nav-right">
-  <% if user_signed_in? %>
-    <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete, class: 'nav-home deco-home'  %>
-    <%= link_to 'Vote', category_path(@category), class: 'nav-home' %>
-  <% else %>
-    <%= link_to "S'inscrire", new_user_registration_path, class: 'nav-home deco-home' %>
-    <%= link_to "Se connecter", new_user_session_path, class: 'nav-home' %>
-  <% end %>
+<div class="navbar-cesars">
+  <div class="nav-left">
+    <%= link_to :root do  %>
+      <%= image_tag 'https://res.cloudinary.com/ddlesqeup/image/upload/v1582125476/logo_yeriqv.png' %>
+    <% end %>
+  </div>
+  <div class="nav-right">
+    <% if user_signed_in? %>
+      <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete, class: 'nav-pages deco-pages'  %>
+      <%= link_to 'Vote', categories_path, class: 'nav-pages' %>
+    <% else %>
+      <%= link_to "S'inscrire", new_user_registration_path, class: 'nav-pages deco-pages' %>
+      <%= link_to "Se connecter", new_user_session_path, class: 'nav-pages' %>
+    <% end %>
+  </div>
 </div>

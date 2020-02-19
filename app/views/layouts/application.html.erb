@@ -9,9 +9,11 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-  <body class="<%= @home_page ? 'homepage' : ''%>">
+  <body class="<%= controller_name %> <%= action_name %>">
     <% unless action_name == 'home' %>
       <%= render 'shared/navbar-cesars' %>
+    <% else %>
+      <%= render 'shared/navbar-cesars-home' %>
     <% end %>
     <%= render 'shared/flashes' %>
     <%= yield %>

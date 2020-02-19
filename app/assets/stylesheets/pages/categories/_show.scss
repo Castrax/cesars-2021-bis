@@ -7,7 +7,6 @@ body {
   font-size: 1.9rem;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: 3rem;
 }
 
 .points-title {
@@ -33,4 +32,27 @@ body {
     color: #050302;
     text-transform: uppercase;
   }
+}
+
+.show-explain {
+  color: #FEDE1E;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.index-button {
+  margin-top: 3rem;
+}
+
+.categories-list {
+  color: #050302;
+  margin-left: 0.5rem;
+  &:hover {
+    color: #050302;
+    text-decoration: none;
+  }
+}
+
+.fa-list {
+  color: #050302;
 }

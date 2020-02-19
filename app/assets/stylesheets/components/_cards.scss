@@ -11,7 +11,7 @@
   border-radius: 4px;
 }
 
-.card > a > img {
+.card > img {
   vertical-align: middle;
   border-style: none;
   position: absolute;
@@ -52,8 +52,13 @@
   }
 }
 
+.active {
+  background-color: #FEDE1E;
+}
+
 .card-voted {
   margin-top: 5rem;
+  margin-bottom: 5rem;
   background-color: white;
   position: relative;
   height: 400px;
@@ -110,6 +115,9 @@
       color: #050302;
       text-transform: uppercase;
       width: 200px;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   .next-category {

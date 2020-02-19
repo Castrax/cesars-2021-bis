@@ -1,10 +1,11 @@
 <div class="container">
   <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
   <% if @category.answer == nil %>
+    <p class="show-explain">Clique sur une carte ci-dessous pour voter</p>
     <div class="cards">
       <% @nominees.each do |nominee| %>
-        <div class="card">
-          <%= link_to category_answers_path(:nominee_id => nominee.id, :category_id => @category.id), method: :post do %>
+        <%= link_to category_answers_path(:nominee_id => nominee.id, :category_id => @category.id), method: :post, class: "link-nominee" do %>
+          <div class="card">
             <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
             <div class="infos-nominee">
               <div class="left-infos">
@@ -17,12 +18,9 @@
               </div>
               <div class="select-button"></div>
             </div>
-          <% end %>
-        </div>
+          </div>
+        <% end %>
       <% end %>
-    </div>
-    <div class="vote-button-show">
-      <%= link_to 'Vote', new_category_answer_path(@category), class: 'vote-button-link' %>
     </div>
   <% else %>
     <div class="card-voted">
@@ -41,42 +39,11 @@
           </div>
           <%= link_to "Vote pour la catégorie suivante", category_path(@category.id + 1), class: "next-category"  %>
         </div>
+        <div class="index-button">
+          <i class="fas fa-list"></i>
+          <%= link_to 'Retourne à la liste des catégories', categories_path, class: "categories-list"  %>
+        </div>
       </div>
     </div>
   <% end %>
 </div>
-
-
-
-
-
-<!-- <div class="container">
-  <h1 class="category-title"><%= @category.title %></h1>
-  <% if @category.answer == nil %>
-    <div class="cards">
-      <%= simple_form_for [@category, @answer] do |f| %>
-        <%= f.association :nominee, as: :radio_buttons, collection: Nominee.where(category_id: @category.id), label_method: lambda { |nominee| "#{nominee.photo} #{nominee.name} - #{nominee.real}" }, label_html: { class: 'card' } %>
-        <div class="vote-button-cat">
-         <%= f.submit 'Vote !', class: 'btn btn-primary' %>
-         <% end %>
-        </div>
-    </div>
-  <% else %>
-    <div class="card-voted">
-      <img src="" alt="">
-      <div class="infos-voted">
-        <div class="infos-title">
-          <p>Tu as voté pour</p>
-          <p><%= Nominee.find(@category.answer.nominee_id).name %></p>
-        </div>
-        <div class="infos-buttons">
-          <%= link_to "Change ton vote",
-                      category_answer_path(@category, @category.answer),
-                      method: :delete,
-                      data: { confirm: "Are you sure?" }, class: 'change-vote' %>
-          <%= link_to "Vote pour la catégorie suivante", category_path(@category.id + 1)  %>
-        </div>
-      </div>
-    </div>
-  <% end %>
-</div> -->
