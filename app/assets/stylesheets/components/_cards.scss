@@ -128,3 +128,29 @@
   }
 }
 
+// Petits appareils (mobiles portrait)
+@media (min-width: 320px) and (max-width: 414px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Petits appareils (mobiles paysage)
+@media (min-width: 568px) {
+}
+
+// Moyens appareils (tablettes portrait)
+@media (min-width: 768px) {
+}
+
+// Moyens appareils (tablettes paysage)
+@media (min-width: 1024px) {
+}
+
+//Ordinateurs
+@media (min-width: 1200px) {
+}
+
+
+
+
