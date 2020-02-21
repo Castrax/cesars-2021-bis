@@ -8,7 +8,7 @@
     <div class="Navbar__Link Navbar__Link-toggle">
       <i class="fas fa-bars"></i>
     </div>
-    <nav class="Navbar__Items Navbar__Items--right">
+    <nav class="Navbar__Items Navbar__Items--right Navbar__ToggleShow">
       <% if user_signed_in? %>
         <div class="Navbar__Link">
           <%= link_to 'Vote', categories_path, class: 'nav-pages' %>

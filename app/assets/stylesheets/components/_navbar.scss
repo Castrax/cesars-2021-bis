@@ -24,6 +24,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .Navbar__Items {
@@ -40,6 +41,12 @@
 
 // Petits appareils (mobiles portrait)
 @media (min-width: 320px) and (max-width: 414px) {
+  .Navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
   .Navbar__Items,
     .Navbar {
       flex-direction: column;
@@ -62,14 +69,24 @@
       display: initial;
       position: absolute;
       cursor: pointer;
+      color: $cesars-yellow;
+      opacity: 0.7;
+      font-size: 40px;
   }
 }
 
 // Petits appareils (mobiles paysage)
 @media (min-width: 568px) and (max-width: 812px) {
+  .Navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
   .Navbar__Items,
     .Navbar {
       flex-direction: column;
+      margin-top: 3rem;
   }
 
   .Navbar__Items {
@@ -89,6 +106,16 @@
       display: initial;
       position: absolute;
       cursor: pointer;
+      color: #FEDE1E;
+      opacity: 0.7;
+      font-size: 40px;
+  }
+  .deco-pages {
+    writing-mode: horizontal-rl;
+    padding: 0;
+  }
+  .nav-pages {
+    padding: 0;
   }
 }
 
