@@ -16,7 +16,6 @@
                   <%= nominee.real %>
                 </div>
               </div>
-              <div class="select-button"></div>
             </div>
           </div>
         <% end %>
@@ -33,7 +32,7 @@
         <div class="infos-buttons">
           <div class="change-vote-div">
             <%= link_to "Change ton vote",
-                        category_answer_path(@category, @answer),
+                        category_answer_path(@category, @answer[0].id),
                         method: :delete,
                         data: { confirm: "Are you sure?" }, class: 'change-vote' %>
           </div>

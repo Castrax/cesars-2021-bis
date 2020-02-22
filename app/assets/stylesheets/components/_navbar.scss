@@ -73,6 +73,11 @@
       opacity: 0.7;
       font-size: 40px;
   }
+
+  .deco-pages {
+    writing-mode: horizontal-tb;
+    padding: 0;
+  }
 }
 
 // Petits appareils (mobiles paysage)
@@ -120,7 +125,7 @@
 }
 
 // Moyens appareils (tablettes portrait)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 834px) {
 }
 
 // Moyens appareils (tablettes paysage)

@@ -12,11 +12,6 @@ class AnswersController < ApplicationController
     end
   end
 
-  def edit
-    @answer = Answer.find(params[:id])
-    authorize @answer
-  end
-
   def destroy
     @answer = Answer.find(params[:id])
     if @answer.destroy
