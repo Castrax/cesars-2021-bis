@@ -1,23 +1,21 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
+  skip_after_action :verify_authorized
+  skip_after_action :verify_policy_scoped
 
   # GET /categories
   # GET /categories.json
   def index
     @categories = Category.all
-    @answers = current_user.answers
+    # @answers = current_user.answers
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @categories = Category.all
+    @category = Category.find(params[:id])
     @nominees = Nominee.where(category_id: params[:id])
-    if @answer == nil
-      @answer = Answer.new
-    else
-      flash[:error] = "Vous ne pouvez plus voter"
-    end
+    @answer = Answer.where(user_id: current_user.id, category_id: params[:id])
   end
 
   # GET /categories/new

@@ -1,10 +1,10 @@
 <div class="container">
   <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
-  <% if @category.answer == nil %>
+  <% if @answer == [] %>
     <p class="show-explain">Clique sur une carte ci-dessous pour voter</p>
     <div class="cards">
       <% @nominees.each do |nominee| %>
-        <%= link_to category_answers_path(:nominee_id => nominee.id, :category_id => @category.id), method: :post, class: "link-nominee" do %>
+        <%= link_to category_answers_path(:nominee_id => nominee.id, :category_id => @category.id, :user_id => current_user), method: :post, class: "link-nominee" do %>
           <div class="card">
             <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
             <div class="infos-nominee">
@@ -24,16 +24,16 @@
     </div>
   <% else %>
     <div class="card-voted">
-      <%= cl_image_tag Nominee.find(id=@category.answer.nominee_id).photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
+      <%= cl_image_tag Nominee.find(id=@answer[0].nominee_id).photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
       <div class="infos-voted">
         <div class="infos-title">
           <p class="label-infos-title">Tu as voté pour</p>
-          <p class="nominee-infos"><%= Nominee.find(@category.answer.nominee_id).name %> <span class="infos-title-real">- <%= Nominee.find(@category.answer.nominee_id).real %></span></p>
+          <p class="nominee-infos"><%= Nominee.find(@answer[0].nominee_id).name %> <span class="infos-title-real">- <%= Nominee.find(@answer[0].nominee_id).real %></span></p>
         </div>
         <div class="infos-buttons">
           <div class="change-vote-div">
             <%= link_to "Change ton vote",
-                        category_answer_path(@category, @category.answer),
+                        category_answer_path(@category, @answer),
                         method: :delete,
                         data: { confirm: "Are you sure?" }, class: 'change-vote' %>
           </div>

@@ -6,6 +6,7 @@ class AnswersController < ApplicationController
     @answer = Answer.new(category_id: @category.id, nominee_id: @nominee.id, user_id: @user.id)
     if @answer.save!
       redirect_to category_path(@category)
+      authorize @answer
     else
       render 'categories/show'
     end
@@ -13,12 +14,14 @@ class AnswersController < ApplicationController
 
   def edit
     @answer = Answer.find(params[:id])
+    authorize @answer
   end
 
   def destroy
     @answer = Answer.find(params[:id])
     if @answer.destroy
       redirect_to category_path(params[:category_id])
+      authorize @answer
     else
       render 'categories/show'
     end
