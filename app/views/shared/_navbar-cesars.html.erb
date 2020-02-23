@@ -11,17 +11,17 @@
     <nav class="Navbar__Items Navbar__Items--right Navbar__ToggleShow">
       <% if user_signed_in? %>
         <div class="Navbar__Link">
-          <%= link_to 'Vote', categories_path, class: 'nav-pages' %>
+          <%= link_to 'Liste nominations', categories_path, class: 'nav-pages' %>
         </div>
         <div class="Navbar__Link">
           <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete, class: 'nav-pages deco-pages'  %>
         </div>
       <% else %>
         <div class="Navbar__Link">
-           <%= link_to "S'inscrire", new_user_registration_path, class: 'nav-pages deco-pages' %>
+          <%= link_to "Se connecter", new_user_session_path, class: 'nav-pages' %>
         </div>
         <div class="Navbar__Link">
-          <%= link_to "Se connecter", new_user_session_path, class: 'nav-pages' %>
+           <%= link_to "S'inscrire", new_user_registration_path, class: 'nav-pages deco-pages' %>
         </div>
       <% end %>
     </nav>

@@ -1103,7 +1103,7 @@ n118 = Nominee.create({
   name: "Qu'est-ce qu'on a encore fait au bon dieu ?",
   real: "réalisé par Philippe De Chauveron, produit par Romain Rojtman"
 })
-n118.category_id = c22.id
+n118.category_id = c23.id
 photo_n118 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581686923/fait-dieu_xtvqkg.webp")
 n118.photo.attach(io: photo_n118, filename: 'photo_n118.jpg', content_type: 'image/jpg')
 n118.save!
@@ -1111,7 +1111,7 @@ n119 = Nominee.create({
   name: "Nous finirons ensemble",
   real: "réalisé par Guillaume Canet, produit par Alain Attal"
 })
-n119.category_id = c22.id
+n119.category_id = c23.id
 photo_n119 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581686921/finirons-ensemble_ejkgcz.jpg")
 n119.photo.attach(io: photo_n119, filename: 'photo_n119.jpg', content_type: 'image/jpg')
 n119.save!
@@ -1119,7 +1119,7 @@ n120 = Nominee.create({
   name: "Hors Normes",
   real: "réalisé par Eric Toledano, Olivier Nakache, produit par Nicolas Duval Adassovsky"
 })
-n120.category_id = c22.id
+n120.category_id = c23.id
 photo_n120 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/toledano_scc1b5.jpg")
 n120.photo.attach(io: photo_n120, filename: 'photo_n120.jpg', content_type: 'image/jpg')
 n120.save!
@@ -1127,7 +1127,7 @@ n121 = Nominee.create({
   name: "Au nom de la terre",
   real: "réalisé par Édouard Bergeon, produit par Christophe Rossignon, Philip Boëffard"
 })
-n121.category_id = c22.id
+n121.category_id = c23.id
 photo_n121 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581681376/au-nom-de-la-terre_jjxpc4.jpg")
 n121.photo.attach(io: photo_n121, filename: 'photo_n121.jpg', content_type: 'image/jpg')
 n121.save!
@@ -1135,7 +1135,7 @@ n122 = Nominee.create({
   name: "Les misérables",
   real: "réalisé par Ladj Ly, produit par Toufik Ayadi, Christophe Barral"
 })
-n122.category_id = c22.id
+n122.category_id = c23.id
 photo_n122 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
 n122.photo.attach(io: photo_n122, filename: 'photo_n122.jpg', content_type: 'image/jpg')
 n122.save!

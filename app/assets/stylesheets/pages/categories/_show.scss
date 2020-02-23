@@ -56,3 +56,32 @@ body {
 .fa-list {
   color: #050302;
 }
+
+// Petits appareils (mobiles portrait)
+@media (min-width: 320px) and (max-width: 414px) {
+  .index-button {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+// Petits appareils (mobiles paysage)
+@media (min-width: 568px) {
+}
+
+// Moyens appareils (tablettes portrait)
+@media (min-width: 768px) and (max-width: 834px) {
+}
+
+// Moyens appareils (tablettes paysage)
+@media (min-width: 1024px) {
+}
+
+//Ordinateurs
+@media (min-width: 1200px) {
+}
+
+
+
+
+

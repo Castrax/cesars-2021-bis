@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
     @categories = Category.all
-    # @answers = current_user.answers
+    @answer = Answer.where(user_id: current_user.id)
   end
 
   # GET /categories/1
