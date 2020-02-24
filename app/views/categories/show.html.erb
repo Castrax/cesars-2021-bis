@@ -6,10 +6,10 @@
     <div class="cards">
       <% @nominees.each do |nominee| %>
         <% accuse = "accuse" %>
-        <% accuses = Nominee.where("nominees.name LIKE ?", "%#{accuse}%") %>
+        <% accuses = Nominee.where("nominees.name LIKE ?", "%#{accuse}%").or(Nominee.where("nominees.real LIKE ?", "%#{accuse}%")) %>
         <% if accuses.include?(nominee)  %>
           <div class="card accuse couponcode">
-            <span class="coupontooltip">Déso :) impossible de voter pour un pédocriminel !</span>
+            <span class="coupontooltip">"Je suis accusé... EUH j'accuse !" (Déso, impossible de voter pour une des catégories de Polanski)</span>
             <%= cl_image_tag nominee.photo.key, height: 373, width: 280, crop: :fill, class: 'photo-accuse' %>
             <div class="infos-nominee infos-accuse">
               <div class="left-infos">
