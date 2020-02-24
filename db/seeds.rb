@@ -568,7 +568,7 @@ n51 = Nominee.create({
   real: "Le chant du loup"
 })
 n51.category_id = c11.id
-photo_n51 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581677041/chant-loup_slhw8e.webp")
+photo_n51 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582575661/chant-loup_egzrld.jpg")
 n51.photo.attach(io: photo_n51, filename: 'photo_n51.jpg', content_type: 'image/jpg')
 n51.save!
 n52 = Nominee.create({
@@ -728,7 +728,7 @@ n71 = Nominee.create({
   real: "Le chant du loup"
 })
 n71.category_id = c5.id
-photo_n71 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581677041/chant-loup_slhw8e.webp")
+photo_n71 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582575661/chant-loup_egzrld.jpg")
 n71.photo.attach(io: photo_n71, filename: 'photo_n71.jpg', content_type: 'image/jpg')
 n71.save!
 n72 = Nominee.create({
