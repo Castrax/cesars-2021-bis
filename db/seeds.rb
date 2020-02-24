@@ -408,7 +408,7 @@ n31 = Nominee.create({
   real: "Hors Normes"
 })
 n31.category_id = c2.id
-photo_n31 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581673935/benjamin-lesieur_vx5qym.webp")
+photo_n31 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577808/lesieur_zzuzfj.jpg")
 n31.photo.attach(io: photo_n31, filename: 'photo_n31.jpg', content_type: 'image/jpg')
 n31.save!
 n32 = Nominee.create({
@@ -440,7 +440,7 @@ n35 = Nominee.create({
   real: "La belle époque"
 })
 n35.category_id = c17.id
-photo_n35 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n35 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n35.photo.attach(io: photo_n35, filename: 'photo_n35.jpg', content_type: 'image/jpg')
 n35.save!
 n36 = Nominee.create({
@@ -448,7 +448,7 @@ n36 = Nominee.create({
   real: "Grâce à Dieu"
 })
 n36.category_id = c17.id
-photo_n36 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/francois-ozon_j9ar16.webp")
+photo_n36 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577525/Grace_a_Dieu_lqoczk.jpg")
 n36.photo.attach(io: photo_n36, filename: 'photo_n36.jpg', content_type: 'image/jpg')
 n36.save!
 n37 = Nominee.create({
@@ -464,7 +464,7 @@ n38 = Nominee.create({
   real: "Les Misérables"
 })
 n38.category_id = c17.id
-photo_n38 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n38 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n38.photo.attach(io: photo_n38, filename: 'photo_n38.jpg', content_type: 'image/jpg')
 n38.save!
 n39 = Nominee.create({
@@ -480,7 +480,7 @@ n40 = Nominee.create({
   real: "Adults in the room"
 })
 n40.category_id = c9.id
-photo_n40 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581676224/adults-in-the-room_izohrj.webp")
+photo_n40 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577864/Adults_in_the_Room_bw6zue.jpg")
 n40.photo.attach(io: photo_n40, filename: 'photo_n40.jpg', content_type: 'image/jpg')
 n40.save!
 n41 = Nominee.create({
@@ -520,7 +520,7 @@ n45 = Nominee.create({
   real: "Atlantique"
 })
 n45.category_id = c16.id
-photo_n45 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581676646/atlantique_slqvlx.webp")
+photo_n45 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577927/Atlantique_g0lwuo.jpg")
 n45.photo.attach(io: photo_n45, filename: 'photo_n45.jpg', content_type: 'image/jpg')
 n45.save!
 n46 = Nominee.create({
@@ -544,7 +544,7 @@ n48 = Nominee.create({
   real: "Les Misérables"
 })
 n48.category_id = c16.id
-photo_n48 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n48 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n48.photo.attach(io: photo_n48, filename: 'photo_n48.jpg', content_type: 'image/jpg')
 n48.save!
 n49 = Nominee.create({
@@ -560,7 +560,7 @@ n50 = Nominee.create({
   real: "La belle époque"
 })
 n50.category_id = c11.id
-photo_n50 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n50 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n50.photo.attach(io: photo_n50, filename: 'photo_n50.jpg', content_type: 'image/jpg')
 n50.save!
 n51 = Nominee.create({
@@ -584,7 +584,7 @@ n53 = Nominee.create({
   real: "Les Misérables"
 })
 n53.category_id = c11.id
-photo_n53 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n53 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n53.photo.attach(io: photo_n53, filename: 'photo_n53.jpg', content_type: 'image/jpg')
 n53.save!
 n54 = Nominee.create({
@@ -600,7 +600,7 @@ n55 = Nominee.create({
   real: "La Belle Époque"
 })
 n55.category_id = c8.id
-photo_n55 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n55 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n55.photo.attach(io: photo_n55, filename: 'photo_n55.jpg', content_type: 'image/jpg')
 n55.save!
 n56 = Nominee.create({
@@ -616,7 +616,7 @@ n57 = Nominee.create({
   real: "Les Misérables"
 })
 n57.category_id = c8.id
-photo_n57 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n57 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n57.photo.attach(io: photo_n57, filename: 'photo_n57.jpg', content_type: 'image/jpg')
 n57.save!
 n58 = Nominee.create({
@@ -640,7 +640,7 @@ n60 = Nominee.create({
   real: "La belle époque"
 })
 n60.category_id = c10.id
-photo_n60 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n60 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n60.photo.attach(io: photo_n60, filename: 'photo_n60.jpg', content_type: 'image/jpg')
 n60.save!
 n61 = Nominee.create({
@@ -648,7 +648,7 @@ n61 = Nominee.create({
   real: "Grâce à Dieu"
 })
 n61.category_id = c10.id
-photo_n61 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/francois-ozon_j9ar16.webp")
+photo_n61 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577525/Grace_a_Dieu_lqoczk.jpg")
 n61.photo.attach(io: photo_n61, filename: 'photo_n61.jpg', content_type: 'image/jpg')
 n61.save!
 n62 = Nominee.create({
@@ -672,7 +672,7 @@ n64 = Nominee.create({
   real: "Les Misérables"
 })
 n64.category_id = c10.id
-photo_n64 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n64 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n64.photo.attach(io: photo_n64, filename: 'photo_n64.jpg', content_type: 'image/jpg')
 n64.save!
 n65 = Nominee.create({
@@ -680,7 +680,7 @@ n65 = Nominee.create({
   real: "La belle époque"
 })
 n65.category_id = c4.id
-photo_n65 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n65 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n65.photo.attach(io: photo_n65, filename: 'photo_n65.jpg', content_type: 'image/jpg')
 n65.save!
 n66 = Nominee.create({
@@ -720,7 +720,7 @@ n70 = Nominee.create({
   real: "La belle époque"
 })
 n70.category_id = c5.id
-photo_n70 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n70 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n70.photo.attach(io: photo_n70, filename: 'photo_n70.jpg', content_type: 'image/jpg')
 n70.save!
 n71 = Nominee.create({
@@ -760,7 +760,7 @@ n75 = Nominee.create({
   real: "La belle époque"
 })
 n75.category_id = c19.id
-photo_n75 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n75 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n75.photo.attach(io: photo_n75, filename: 'photo_n75.jpg', content_type: 'image/jpg')
 n75.save!
 n76 = Nominee.create({
@@ -768,7 +768,7 @@ n76 = Nominee.create({
   real: "Grâce à Dieu"
 })
 n76.category_id = c19.id
-photo_n76 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/francois-ozon_j9ar16.webp")
+photo_n76 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577525/Grace_a_Dieu_lqoczk.jpg")
 n76.photo.attach(io: photo_n76, filename: 'photo_n76.jpg', content_type: 'image/jpg')
 n76.save!
 n77 = Nominee.create({
@@ -792,7 +792,7 @@ n79 = Nominee.create({
   real: "Les misérables"
 })
 n79.category_id = c19.id
-photo_n79 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n79 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n79.photo.attach(io: photo_n79, filename: 'photo_n79.jpg', content_type: 'image/jpg')
 n79.save!
 n80 = Nominee.create({
@@ -888,7 +888,7 @@ n91 = Nominee.create({
   real: "réalisé par Lorenzo Mattoti, produit par Valérie Schermann, Christophe Jankovic"
 })
 n91.category_id = c7.id
-photo_n91 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581680163/fameuse-invasion_nrirzx.webp")
+photo_n91 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577998/La_Fameuse_Invasion_des_Ours_en_Sicile_eutnwk.jpg")
 n91.photo.attach(io: photo_n91, filename: 'photo_n91.jpg', content_type: 'image/jpg')
 n91.save!
 n92 = Nominee.create({
@@ -896,7 +896,7 @@ n92 = Nominee.create({
   real: "réalisé par Zabou Breitman, Éléa Gobbé-Mévellec, produit par Reginald De Guillebon"
 })
 n92.category_id = c7.id
-photo_n92 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581680161/hirondelles-kaboul_ovszca.webp")
+photo_n92 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582578066/Les_Hirondelles_de_Kaboul_q6h8ix.jpg")
 n92.photo.attach(io: photo_n92, filename: 'photo_n92.jpg', content_type: 'image/jpg')
 n92.save!
 n93 = Nominee.create({
@@ -952,7 +952,7 @@ n99 = Nominee.create({
   real: "réalisé par Mati Diop, produit par Judith Lou Lévy, Eve Robin"
 })
 n99.category_id = c14.id
-photo_n99 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581676646/atlantique_slqvlx.webp")
+photo_n99 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577927/Atlantique_g0lwuo.jpg")
 n99.photo.attach(io: photo_n99, filename: 'photo_n99.jpg', content_type: 'image/jpg')
 n99.save!
 n100 = Nominee.create({
@@ -968,7 +968,7 @@ n101 = Nominee.create({
   real: "réalisé par Antonin Baudry, produit par Jérôme Seydoux, Alain Attal"
 })
 n101.category_id = c14.id
-photo_n101 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581677041/chant-loup_slhw8e.webp")
+photo_n101 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582575661/chant-loup_egzrld.jpg")
 n101.photo.attach(io: photo_n101, filename: 'photo_n101.jpg', content_type: 'image/jpg')
 n101.save!
 n102 = Nominee.create({
@@ -976,7 +976,7 @@ n102 = Nominee.create({
   real: "réalisé par Ladj Ly, produit par Toufik Ayadi, Christophe Barral"
 })
 n102.category_id = c14.id
-photo_n102 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n102 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n102.photo.attach(io: photo_n102, filename: 'photo_n102.jpg', content_type: 'image/jpg')
 n102.save!
 n103 = Nominee.create({
@@ -1024,7 +1024,7 @@ n108 = Nominee.create({
   real: "réalisé par Quentin Tarantino, distribution France Sony Pictures Releasing France"
 })
 n108.category_id = c18.id
-photo_n108 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581681951/once-upon_ap92ml.webp")
+photo_n108 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577054/a3378998b6e42c1f2712229459b1ac78b4a24776_lldiuy.jpg")
 n108.photo.attach(io: photo_n108, filename: 'photo_n108.jpg', content_type: 'image/jpg')
 n108.save!
 n109 = Nominee.create({
@@ -1032,7 +1032,7 @@ n109 = Nominee.create({
   real: "réalisé par Bong Joon-Ho, distribution France Les Bookmakers - The Jokers"
 })
 n109.category_id = c18.id
-photo_n109 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581681952/parasite_ncnrhu.webp")
+photo_n109 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577144/parasite_drrgqs.jpg")
 n109.photo.attach(io: photo_n109, filename: 'photo_n109.jpg', content_type: 'image/jpg')
 n109.save!
 n110 = Nominee.create({
@@ -1040,7 +1040,7 @@ n110 = Nominee.create({
   real: "réalisé par Marco Bellochio, coproduction France AD Vitam Production (Alexandra Henochsberg)"
 })
 n110.category_id = c18.id
-photo_n110 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581681951/le-traitre_n34ozc.webp")
+photo_n110 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577207/Le_Traitre_raky3s.jpg")
 n110.photo.attach(io: photo_n110, filename: 'photo_n110.jpg', content_type: 'image/jpg')
 n110.save!
 n111 = Nominee.create({
@@ -1048,7 +1048,7 @@ n111 = Nominee.create({
   real: "produit par Francois Kraus, Denis Pineau-Valencienne, réalisé par Nicolas Bedos"
 })
 n111.category_id = c22.id
-photo_n111 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/nicolas-bedos_tj7aeg.webp")
+photo_n111 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577326/belle_epoque_qdibin.jpg")
 n111.photo.attach(io: photo_n111, filename: 'photo_n111.jpg', content_type: 'image/jpg')
 n111.save!
 n112 = Nominee.create({
@@ -1056,7 +1056,7 @@ n112 = Nominee.create({
   real: "produit par Eric Altmayer, Nicolas Altmayer, réalisé par François Ozon"
 })
 n112.category_id = c22.id
-photo_n112 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/francois-ozon_j9ar16.webp")
+photo_n112 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577525/Grace_a_Dieu_lqoczk.jpg")
 n112.photo.attach(io: photo_n112, filename: 'photo_n112.jpg', content_type: 'image/jpg')
 n112.save!
 n113 = Nominee.create({
@@ -1080,7 +1080,7 @@ n115 = Nominee.create({
   real: "produit par Toufik Ayadi, Christophe Barral, réalisé par Ladj Ly"
 })
 n115.category_id = c22.id
-photo_n115 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n115 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n115.photo.attach(io: photo_n115, filename: 'photo_n115.jpg', content_type: 'image/jpg')
 n115.save!
 n116 = Nominee.create({
@@ -1104,7 +1104,7 @@ n118 = Nominee.create({
   real: "réalisé par Philippe De Chauveron, produit par Romain Rojtman"
 })
 n118.category_id = c23.id
-photo_n118 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581686923/fait-dieu_xtvqkg.webp")
+photo_n118 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582577652/Qu_est_ce_qu_on_a_encore_fait_au_Bon_Dieu_xrswk3.jpg")
 n118.photo.attach(io: photo_n118, filename: 'photo_n118.jpg', content_type: 'image/jpg')
 n118.save!
 n119 = Nominee.create({
@@ -1136,7 +1136,7 @@ n122 = Nominee.create({
   real: "réalisé par Ladj Ly, produit par Toufik Ayadi, Christophe Barral"
 })
 n122.category_id = c23.id
-photo_n122 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1581675620/ladj-ly_gvhgdj.webp")
+photo_n122 = URI.open("https://res.cloudinary.com/ddlesqeup/image/upload/v1582576798/Les_Miserables_fdkeok.jpg")
 n122.photo.attach(io: photo_n122, filename: 'photo_n122.jpg', content_type: 'image/jpg')
 n122.save!
 
