@@ -57,7 +57,9 @@
                           method: :delete,
                           data: { confirm: "Are you sure?" }, class: 'change-vote' %>
             </div>
-            <%= link_to "Valider tes votes", category_path(@category.id + 1), class: "next-category"  %>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalValidate">
+              Valide tes votes
+            </button>
           </div>
           <div class="index-button">
             <i class="fas fa-list"></i>
@@ -91,3 +93,4 @@
     <% end %>
   <% end %>
 </div>
+<%= render 'shared/modal-validate' %>
