@@ -59,6 +59,7 @@
   background-color: white;
   position: relative;
   height: 400px;
+  border-radius: 4px;
 }
 
 .card-voted > img {
@@ -153,6 +154,22 @@
   opacity: 0.5;
 }
 
+.card-voted, .no-vote {
+  height: 250px;
+}
+
+.infos-voted, .no-vote {
+  width: 100%;
+}
+
+.infos-title, .no-vote {
+  text-align: center;
+}
+
+.winner-loser-waiting {
+  margin-top: 10rem;
+}
+
 // Petits appareils (mobiles portrait)
 @media (min-width: 320px) and (max-width: 414px) {
   .cards {
@@ -183,6 +200,19 @@
     .change-vote-div {
       margin-bottom: 2rem;
     }
+  }
+  .card-voted, .no-vote {
+    height: 250px;
+    margin-top: 5rem;
+  }
+  .infos-voted, .no-vote {
+    margin-top: 2rem;
+  }
+  .nominee-infos, .no-vote {
+    margin-left: 0 !important;
+  }
+  .label-infos-title, .no-vote {
+    padding-left: 0rem !important;
   }
 }
 

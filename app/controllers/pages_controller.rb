@@ -5,4 +5,9 @@ class PagesController < ApplicationController
     @home_page = true
     @category = Category.first
   end
+
+  def resultats
+    @users = User.all
+    @categories = Category.all
+  end
 end

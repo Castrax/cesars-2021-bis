@@ -12,6 +12,12 @@ class AnswersController < ApplicationController
     end
   end
 
+  def self.update
+    Answer.all.each do |a|
+      a.update(points_earned: 50)
+    end
+  end
+
   def destroy
     @answer = Answer.find(params[:id])
     if @answer.destroy

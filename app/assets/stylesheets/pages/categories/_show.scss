@@ -57,6 +57,34 @@ body {
   color: #050302;
 }
 
+.results-category {
+  margin-bottom: 5rem;
+  background-color: white;
+  position: relative;
+  border-radius: 4px;
+  padding-bottom: 3rem;
+}
+
+.title-results-category {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid #050302;
+  padding: 0.5rem;
+}
+
 // Petits appareils (mobiles portrait)
 @media (min-width: 320px) and (max-width: 414px) {
   .index-button {

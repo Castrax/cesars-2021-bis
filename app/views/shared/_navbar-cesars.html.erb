@@ -11,6 +11,9 @@
     <nav class="Navbar__Items Navbar__Items--right Navbar__ToggleShow">
       <% if user_signed_in? %>
         <div class="Navbar__Link">
+          <%= link_to 'Résultats', '/pages/resultats', class: 'nav-pages' %>
+        </div>
+        <div class="Navbar__Link">
           <%= link_to 'Liste nominations', categories_path, class: 'nav-pages' %>
         </div>
         <div class="Navbar__Link">

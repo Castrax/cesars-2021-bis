@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!
   include Pundit
 
@@ -14,6 +15,12 @@ class ApplicationController < ActionController::Base
     # end
 
     private
+
+    def configure_permitted_parameters
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:prenom, :nom])
+      devise_parameter_sanitizer.permit(:sign_in, keys: [:prenom, :nom])
+      devise_parameter_sanitizer.permit(:account_update, keys: [:prenom, :nom])
+    end
 
     def skip_pundit?
       devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
