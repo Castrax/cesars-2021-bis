@@ -170,6 +170,11 @@
   margin-top: 10rem;
 }
 
+.top {
+  text-align: right;
+  margin-right: 10rem;
+}
+
 // Petits appareils (mobiles portrait)
 @media (min-width: 320px) and (max-width: 414px) {
   .cards {
@@ -214,10 +219,29 @@
   .label-infos-title, .no-vote {
     padding-left: 0rem !important;
   }
+  .top-card {
+    height: 175px;
+    margin-top: 24rem;
+  }
+  .top-card > img {
+    top: -360px;
+    left: 7%;
+  }
+  .infos-top {
+    margin-top: 2rem;
+  }
+  .top {
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+  .winner-loser-waiting {
+    margin-top: 0;
+  }
 }
 
 // Petits appareils (mobiles paysage)
-@media (min-width: 568px) {
+@media (min-width: 568px) and (max-width: 767px) {
   .cards {
     grid-template-columns: 1fr;
   }
@@ -228,12 +252,20 @@
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .top {
+    text-align: right;
+    margin-right: 3rem;
+  }
 }
 
 // Moyens appareils (tablettes paysage)
-@media (min-width: 1024px) {
+@media (min-width: 835px) and (max-width: 1199px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .top {
+    text-align: right;
+    margin-right: 3rem;
   }
 }
 

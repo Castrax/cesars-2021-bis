@@ -1,7 +1,7 @@
-<div class="card-voted">
+<div class="card-voted top-card">
   <%= cl_image_tag Nominee.find(id=@answer[0].nominee_id).photo.key, height: 373, width: 280, crop: :fill, class: 'photo-nominee' %>
-  <div class="infos-voted">
-    <div class="infos-title">
+  <div class="infos-voted infos-top">
+    <div class="infos-title top">
       <p class="label-infos-title">Tu as voté pour</p>
       <p class="nominee-infos"><%= Nominee.find(@answer[0].nominee_id).name %> <span class="infos-title-real">- <%= Nominee.find(@answer[0].nominee_id).real %></span></p>
     </div>
@@ -11,7 +11,7 @@
   <% if @answer[0].nominee.winner == true %>
     <div class="card-voted status">
       <div class="infos-voted">
-        <div class="infos-title">
+        <div class="infos-title bottom">
           <p class="label-infos-title">🎉 Bravo, ton vote est gagnant !</p>
           <p class="nominee-infos">Tu as gagné <%= @category.points %> points, tu as le droit de donner un gage à la personne de ton choix.</p>
         </div>
@@ -20,7 +20,7 @@
   <% elsif @answer[0].nominee.winner == false %>
     <div class="card-voted status">
       <div class="infos-voted">
-        <div class="infos-title">
+        <div class="infos-title bottom">
           <p class="label-infos-title">😓 Oups, ton vote est perdant !</p>
           <p class="nominee-infos">Attends-toi à recevoir un gage d'un de tes copains...</p>
         </div>
@@ -29,7 +29,7 @@
   <% else %>
     <div class="card-voted status">
       <div class="infos-voted">
-        <div class="infos-title">
+        <div class="infos-title bottom">
           <p class="label-infos-title">⏰ En attente des résultats de la cérémonie</p>
           <p class="nominee-infos">RDV ce soir pour savoir si tu es gagnant ou perdant</p>
         </div>

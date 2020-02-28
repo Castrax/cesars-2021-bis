@@ -81,7 +81,51 @@
 }
 
 // Petits appareils (mobiles paysage)
-@media (min-width: 568px) and (max-width: 812px) {
+@media (min-width: 414px) and (max-width: 812px) {
+  .Navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+      margin-top: 3rem;
+  }
+
+  .Navbar__Items {
+      display:none;
+  }
+
+  .Navbar__Items--right {
+      margin-left:0;
+  }
+
+  .Navbar__ToggleShow {
+      display: flex;
+  }
+
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      color: #FEDE1E;
+      opacity: 0.7;
+      font-size: 40px;
+  }
+  .deco-pages {
+    writing-mode: horizontal-tb;
+    padding: 1rem;
+  }
+  .nav-pages {
+    padding: 0;
+  }
+}
+
+// Moyens appareils (tablettes portrait)
+@media (min-width: 813px) and (max-width: 1023px) {
   .Navbar {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -122,10 +166,6 @@
   .nav-pages {
     padding: 0;
   }
-}
-
-// Moyens appareils (tablettes portrait)
-@media (min-width: 768px) and (max-width: 834px) {
 }
 
 // Moyens appareils (tablettes paysage)
