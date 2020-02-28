@@ -5,7 +5,7 @@
     <p class="index-explain">Tu as voté <%= @answer.count %> catégories sur <%= @categories.count %></p>
       <ul>
         <% @categories.each do |category| %>
-          <% if category.answer != nil && category.answer.user_id == current_user.id %>
+          <% if current_user.answers.where(category_id: category.id)[0]!= nil && current_user.answers.where(category_id: category.id)[0].category_id == category.id %>
             <%= link_to category do %>
               <li><i class="fas fa-check"></i><%= category.title %></li>
             <% end %>

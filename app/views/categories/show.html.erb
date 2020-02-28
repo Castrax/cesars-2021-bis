@@ -2,7 +2,7 @@
 <div class="container">
   <h1 class="category-title"><%= @category.title %><span class="points-title"> - <%= @category.points %> points</span></h1>
   <% if @answer == [] %>
-    <%= render 'shared/show/list-nominees' %>
+    <%= render 'shared/show/card-no-vote' %>
   <% else %>
     <%= render 'shared/show/card-voted-closed' %>
   <% end %>
